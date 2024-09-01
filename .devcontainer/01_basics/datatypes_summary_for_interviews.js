@@ -40,3 +40,28 @@ console.table([typeof heros, typeof myObj, typeof myFunction]) //object, object 
 //eg: let sampleString = "abc"
 
 
+//++++++++++++++++++++++++++++++++++++++ Memory Allocation ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack -> for PRIMITIVE DATATYPES and Heap -> for NON_PRIMITIVE DATATYPES
+
+//here variables are passed by values so original variable won't change it's value
+let myYTChannel = "Rahul@yt.com"
+
+let anotherChannel = myYTChannel
+anotherChannel = "Alt@yt.com"
+
+console.table([myYTChannel,anotherChannel]) //passing by values only changes value of 'anotherChannel'
+
+//here variables are passed by reference so original variable will also change
+let userOne = {
+    name: "Rahul",
+    age: 27
+}
+
+let userTwo = userOne
+
+userTwo.age = 28
+
+console.table([userOne.age,userTwo.age])
+
+
