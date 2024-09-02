@@ -22,4 +22,36 @@ const result = addNos(5,6);  //**************if no arguments passed then it give
 console.log(result);
 
 
+//////////// When we make SHOPPING CART then we don't know how many elements to add in cart, to keep the flow of the arguments in 
+/////////// the function dynamic we using REST or SPREAD
+
+function calculateCartPrice(...val1){
+    return val1;
+}
+
+console.log(calculateCartPrice(100,200,300));
+
+function calcCartPrice2(val1,val2,...val3){ 
+    return val3
+}
+
+console.log(calcCartPrice2(100,200,300,400,500)); // val1 takes 100 , val2 takes 200 and the rest is taken by val3
+
+////////////function handling objects///////////////////
+
+const user = {
+    name: "Rahul",
+    age: 27
+}
+
+function handlingObjects(anyObject){
+    console.log(`Hi, my name is ${anyObject.name} and my age is ${anyObject.age}`);
+    
+}
+
+handlingObjects(user);
+handlingObjects({
+    name: "Sam",
+    age: 20
+})
 
