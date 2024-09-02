@@ -57,6 +57,33 @@ console.log(users[2].email);
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); //checks if this property is present in this object or not (TRUE/FALSE)
 
+////////////////NEXT LECTURE: DESTRUCTURING ARRAY ///////////////////////////////////////
+
+const course = {
+    courseName: "JS in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// console.log(course.courseInstructor);
+
+// const {courseInstructor} = course
+// console.log(courseInstructor);
+
+const {courseInstructor : instructor} = course
+console.log(instructor); //same way of printing the above statement
+
+/////////////////// WE GET APIs IN FORM OF JSON: /////////////////////
+//JSON format:
+
+// {
+//     "name" : "Rahul",
+//     "age" : 27
+//     "gender" : "male"
+// }
+
+
+
 
 
 
