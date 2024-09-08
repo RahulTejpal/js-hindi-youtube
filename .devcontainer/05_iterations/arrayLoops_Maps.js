@@ -21,3 +21,5 @@ for (const [mapKey,mapValue] of map) {
     console.log(mapKey,':-',mapValue);
     
 }
+
+//***********forOf loop can't be used to iterate through objects***************//
