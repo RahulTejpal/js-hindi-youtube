@@ -54,4 +54,4 @@ const myCoding = [
 myCoding.forEach((item)=>{
     console.log(item.languageName);
     
-})
+}) //********for each doesn't return anything*******/
